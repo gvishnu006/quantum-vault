@@ -533,3 +533,115 @@ body {
   gap: 0.5rem;
   cursor: pointer;
 }
+
+/* Vault Unlocked UI */
+.unlocked-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-line);
+  padding-bottom: 1.25rem;
+}
+
+.vault-search-row {
+  margin-bottom: 1.5rem;
+}
+
+.vault-search-row input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-line);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1.2rem;
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.vault-search-row input:focus {
+  border-color: var(--emerald);
+}
+
+.items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.vault-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-line);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.25rem;
+  transition: border-color 0.2s;
+}
+
+.vault-item:hover {
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.item-title {
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.item-tag {
+  font-size: 0.72rem;
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+}
+
+.item-user {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  margin-top: 0.2rem;
+}
+
+.item-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.copy-item-btn {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid var(--emerald);
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.copy-item-btn:hover {
+  background: var(--emerald);
+  color: #061c14;
+}
+
+.del-item-btn {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #f87171;
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.del-item-btn:hover {
+  background: #ef4444;
+  color: #fff;
+}
