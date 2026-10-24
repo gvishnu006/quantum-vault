@@ -645,3 +645,68 @@ body {
   background: #ef4444;
   color: #fff;
 }
+
+/* Audit Section */
+.audit-section {
+  padding: 5rem 0;
+  border-top: 1px solid var(--border-line);
+}
+
+.audit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.audit-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-line);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.audit-score-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.score-number {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: var(--emerald);
+  font-family: var(--font-mono);
+}
+
+.score-sub {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+}
+
+.audit-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.check-item span {
+  color: var(--emerald);
+  font-weight: 800;
+  margin-right: 0.4rem;
+}
+
+@media (max-width: 800px) {
+  .audit-grid {
+    grid-template-columns: 1fr;
+  }
+}

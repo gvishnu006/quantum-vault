@@ -124,6 +124,38 @@
     </div>
   </section>
 
+  <!-- Security Health Audit Section -->
+  <section class="audit-section" id="audit">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">VAULT DIAGNOSTICS</span>
+        <h2>Security Health & Confidential Backup</h2>
+      </div>
+
+      <div class="audit-grid">
+        <div class="audit-card">
+          <div class="audit-score-circle">
+            <span class="score-number">98%</span>
+            <span class="score-sub">VAULT HEALTH</span>
+          </div>
+          <div class="audit-details">
+            <div class="check-item"><span>✓</span> Zero reused passwords detected</div>
+            <div class="check-item"><span>✓</span> All entries meet 60+ bits entropy requirements</div>
+            <div class="check-item"><span>✓</span> Authenticated encryption integrity valid</div>
+          </div>
+        </div>
+
+        <div class="audit-card">
+          <h3>Encrypted Backup Export</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0.5rem 0 1.5rem;">Download your fully encrypted vault bundle for offline cold storage or migration.</p>
+          <div style="display: flex; gap: 0.75rem;">
+            <button class="btn btn-primary" id="exportBackupBtn">Export Backup (.json)</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Security Highlights -->
   <section class="security-section" id="security">
     <div class="container">

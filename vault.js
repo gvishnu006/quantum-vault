@@ -209,3 +209,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+  // Backup Export
+  const exportBackupBtn = document.getElementById('exportBackupBtn');
+  if (exportBackupBtn) {
+    exportBackupBtn.addEventListener('click', () => {
+      const stored = localStorage.getItem('quantum_vault_data');
+      if (!stored) return alert('No vault data to export. Unlock or add items first!');
+
+      const blob = new Blob([stored], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `quantum-vault-backup-${new Date().toISOString().slice(0, 10)}.json`;
+      a.click();
+    });
+  }
