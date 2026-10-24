@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuantumVault — Zero-Knowledge Client-Side Encryption Vault</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="glow-layer glow-emerald"></div>
+  <div class="glow-layer glow-cyan"></div>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="container nav-box">
+      <a href="#" class="brand">
+        <span class="shield-icon">🛡️</span>
+        <span class="brand-title">QUANTUM<span>VAULT</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#vault">Vault</a>
+        <a href="#generator">Generator</a>
+        <a href="#security">Architecture</a>
+        <a href="https://github.com/gvishnu006" target="_blank" rel="noopener" class="gh-link">GitHub</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="sec-badge">
+        <span class="badge-dot"></span>
+        <span>AES-GCM-256 + PBKDF2 (100k Iterations)</span>
+      </div>
+
+      <h1 class="hero-title">
+        Zero-knowledge security, <span class="gradient-text">encrypted directly in your browser</span>.
+      </h1>
+
+      <p class="hero-desc">
+        QuantumVault never transmits plaintext keys or master passwords across the network. All secrets are cryptographically derived and decrypted locally using the native Web Crypto API.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#vault" class="btn btn-primary">Open My Vault</a>
+        <a href="#generator" class="btn btn-outline">Password Generator</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Vault Section -->
+  <section class="vault-section" id="vault">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">ENCRYPTED STORAGE</span>
+        <h2>Credential & Key Manager</h2>
+      </div>
+
+      <div class="vault-container" id="vaultCard">
+        <div class="vault-auth-box" id="authBox">
+          <div class="auth-icon">🔐</div>
+          <h3>Unlock Your Local Vault</h3>
+          <p>Enter your master passphrase. Keys are derived locally in browser memory and wiped on session lock.</p>
+          <div class="pass-input-wrap">
+            <input type="password" id="masterPass" placeholder="Enter master passphrase...">
+            <button class="btn btn-primary" id="unlockBtn">Unlock Vault</button>
+          </div>
+          <span class="auth-note">Tip: First time? Any password sets up your encrypted local vault.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Security Highlights -->
+  <section class="security-section" id="security">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">SECURITY GUARANTEES</span>
+        <h2>Military-Grade Client-Side Primitives</h2>
+      </div>
+
+      <div class="sec-grid">
+        <div class="sec-card">
+          <div class="sec-icon">⚡</div>
+          <h3>Web Crypto API Native</h3>
+          <p>Powered by the hardware-accelerated SubtleCrypto standard implementation in Chromium and WebKit.</p>
+        </div>
+
+        <div class="sec-card">
+          <div class="sec-icon">🛡️</div>
+          <h3>Zero-Knowledge Architecture</h3>
+          <p>Plaintext data never touches remote servers or analytics scripts. Your master key stays in RAM only.</p>
+        </div>
+
+        <div class="sec-card">
+          <div class="sec-icon">🔒</div>
+          <h3>Authenticated Encryption</h3>
+          <p>AES-GCM-256 provides both confidentiality and cryptographic integrity verification against tampering.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="brand">
+        <span class="shield-icon">🛡️</span>
+        <span class="brand-title">QUANTUM<span>VAULT</span></span>
+      </div>
+      <p>&copy; 2026 QuantumVault. Built by <a href="https://github.com/gvishnu006" target="_blank" rel="noopener">gvishnu006</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>
