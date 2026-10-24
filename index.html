@@ -81,6 +81,49 @@
     </div>
   </section>
 
+  <!-- Password Generator Section -->
+  <section class="generator-section" id="generator">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">ENTROPY ENGINE</span>
+        <h2>Cryptographic Password Generator</h2>
+      </div>
+
+      <div class="gen-box">
+        <div class="gen-output-wrap">
+          <span class="gen-password" id="genPassword">Click Generate</span>
+          <button class="copy-pass-btn" id="copyGenBtn">Copy</button>
+        </div>
+
+        <div class="entropy-meter-wrap">
+          <div class="entropy-bar-bg">
+            <div class="entropy-bar-fill" id="entropyBar"></div>
+          </div>
+          <div class="entropy-stats">
+            <span id="entropyScore">0 bits entropy</span>
+            <span class="strength-label" id="strengthLabel">Strength: None</span>
+          </div>
+        </div>
+
+        <div class="gen-controls">
+          <div class="control-row">
+            <label>Length: <span id="lenValue">18</span></label>
+            <input type="range" min="8" max="48" value="18" id="lenSlider">
+          </div>
+
+          <div class="checkbox-row">
+            <label><input type="checkbox" id="chkUpper" checked> Uppercase (A-Z)</label>
+            <label><input type="checkbox" id="chkLower" checked> Lowercase (a-z)</label>
+            <label><input type="checkbox" id="chkNums" checked> Numbers (0-9)</label>
+            <label><input type="checkbox" id="chkSymbols" checked> Symbols (!@#$)</label>
+          </div>
+
+          <button class="btn btn-primary" id="regenerateBtn" style="width: 100%; margin-top: 1.5rem;">Generate New Password</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Security Highlights -->
   <section class="security-section" id="security">
     <div class="container">
@@ -123,5 +166,6 @@
   </footer>
 
   <script src="crypto.js"></script>
+  <script src="generator.js"></script>
 </body>
 </html>
